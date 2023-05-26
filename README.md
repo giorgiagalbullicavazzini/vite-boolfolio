@@ -8,7 +8,7 @@
 ## Roadmap - Front End
 
 - [x] In a new repository, create a new Vue project using Vite and install Axios
-- [ ] Call the API from the primary Vue component to get all the projects
-- [ ] To verify the data are accurate, print the findings in console
+- [X] Call the API from the primary Vue component to get all the projects
+- [X] To verify the data are accurate, print the findings in console
 - [ ] To visualize a single project, make a new ProjectCard component
 - [ ] Visualize each project with this component
