@@ -1,5 +1,7 @@
 <script>
-import HelloApp from './components/HelloApp.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 import axios from 'axios';
 
 export default {
@@ -14,7 +16,9 @@ export default {
     }
   },
   components: {
-    HelloApp
+    AppHeader,
+    AppMain,
+    AppFooter,
   },
   methods: {
     getProjects() {
@@ -34,10 +38,9 @@ export default {
 </script>
 
 <template>
-  <HelloApp />
-  <div class="container">
-    {{ console.log(this.projects) }}
-  </div>
+  <AppHeader />
+  <AppMain :data="projects" />
+  <AppFooter />
 </template>
 
 <style lang="scss">
