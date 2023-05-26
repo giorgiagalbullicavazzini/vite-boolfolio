@@ -1,18 +1,15 @@
 <script>
+import { store } from './store';
+import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-import axios from 'axios';
 
 export default {
   name: 'App',
   data() {
     return {
-      api: 'http://127.0.0.1:8000/api',
-      apiUrls: {
-        projects: '/projects'
-      },
-      projects: []
+      store,
     }
   },
   components: {
@@ -22,9 +19,9 @@ export default {
   },
   methods: {
     getProjects() {
-      axios.get(this.api + this.apiUrls.projects)
+      axios.get(this.store.api + this.store.apiUrls.projects)
       .then((response) => {
-        this.projects = response.data.results;
+        this.store.projects = response.data.results;
       })
       .catch((error) => {
         console.log(error);
@@ -39,7 +36,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain :data="projects" />
+  <AppMain />
   <AppFooter />
 </template>
 
