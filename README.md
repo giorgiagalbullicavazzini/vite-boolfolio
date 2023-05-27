@@ -17,4 +17,4 @@
 - [x] Create the portfolio routes
 - [x] Create all the pages
 - [ ] Create the params route and the project's details page
-- [ ] The portfolio can be navigated entirely
+- [x] The portfolio can be navigated entirely
