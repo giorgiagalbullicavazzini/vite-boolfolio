@@ -18,7 +18,7 @@ const router = createRouter({
         {
             path: '/contacts',
             name: 'contacts',
-            component: Contacts
+            component: ContactsPage
         },
         {
             path: '/portfolio',
