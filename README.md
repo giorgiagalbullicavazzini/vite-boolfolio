@@ -15,6 +15,6 @@
 - [x] Visualize each project with this component
 - [x] Install Vue Router
 - [x] Create the portfolio routes
-- [ ] Create all the pages
+- [x] Create all the pages
 - [ ] Create the params route and the project's details page
 - [ ] The portfolio can be navigated entirely
