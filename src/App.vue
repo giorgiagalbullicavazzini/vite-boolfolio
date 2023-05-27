@@ -7,21 +7,7 @@ export default {
   components: {
     AppHeader,
     AppFooter,
-  },
-  // methods: {
-  //   getProjects() {
-  //     axios.get(this.store.api + this.store.apiUrls.projects)
-  //     .then((response) => {
-  //       this.store.projects = response.data.results;
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     })
-  //   }
-  // },
-  // created() {
-  //   this.getProjects();
-  // }
+  }
 }
 </script>
 

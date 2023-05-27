@@ -6,4 +6,5 @@ export const store = reactive({
         projects: '/projects',
     },
     projects: [],
+    project: null
 })

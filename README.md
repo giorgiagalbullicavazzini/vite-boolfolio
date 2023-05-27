@@ -16,5 +16,5 @@
 - [x] Install Vue Router
 - [x] Create the portfolio routes
 - [x] Create all the pages
-- [ ] Create the params route and the project's details page
+- [x] Create the params route and the project's details page
 - [x] The portfolio can be navigated entirely

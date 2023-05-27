@@ -18,7 +18,9 @@ export default {
                         <li v-for="technology in project.technologies">{{ technology.name }}</li>
                     </ul>
                 <p class="card-text">{{ project.description }}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="btn btn-primary">
+                    Details
+                </router-link>
             </div>
         </div>
     </main>
