@@ -36,6 +36,10 @@ export default {
                 </router-link>
             </h2>
             <p>{{ this.store.project.description }}</p>
+            <hr>
+            <div class="my-3" v-if="this.store.project.technologies.length">
+                <span class="badge text-bg-warning me-1" v-for="technology in this.store.project.technologies">{{ technology.name }}</span>
+            </div>
         </div>
     </section>
     <section v-else>

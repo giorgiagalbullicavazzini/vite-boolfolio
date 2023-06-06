@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage.vue';
 import ContactsPage from './pages/ContactsPage.vue';
 import PortfolioPage from './pages/PortfolioPage.vue';
 import ProjectPage from './pages/ProjectPage.vue';
+import TechnologyPage from './pages/TechnologyPage.vue';
 import TypePage from './pages/TypePage.vue';
 
 const router = createRouter({
@@ -41,6 +42,11 @@ const router = createRouter({
             path: '/portfolio/:slug',
             name: 'project',
             component: ProjectPage
+        },
+        {
+            path: '/portfolio/technologies/:slug',
+            name: 'technology',
+            component: TechnologyPage
         },
         {
             path: '/portfolio/types/:slug',
