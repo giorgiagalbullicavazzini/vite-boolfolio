@@ -32,7 +32,7 @@ export default {
             <h1 class="mt-5 mb-3">{{ this.store.project.title }}</h1>
             <h2>
                 <router-link :to="{ name: 'type', params: {slug: this.store.project.type.slug} }" class="nav-link">
-                    {{ this.store.project.type.name }}
+                    Type: {{ this.store.project.type.name }}
                 </router-link>
             </h2>
             <p>{{ this.store.project.description }}</p>

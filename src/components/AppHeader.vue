@@ -14,10 +14,10 @@ export default {
 <template>
     <header>
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
                 <div class="logo">Logo</div>
                 <nav>
-                    <ul class="list-unstyled list-group list-group-horizontal m-0 p-0 gap-2">
+                    <ul class="list-unstyled list-group list-group-horizontal align-items-center m-0 p-0 gap-4">
                         <li>
                             <router-link :to="{ name: 'home' }" class="nav-link">
                                 Homepage
