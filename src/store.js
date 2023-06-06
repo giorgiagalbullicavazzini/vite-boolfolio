@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-    api: 'http://127.0.0.1:8000/api',
+    api: import.meta.env.VITE_BACKEND_API_URL,
     apiUrls: {
         projects: '/projects',
     },
