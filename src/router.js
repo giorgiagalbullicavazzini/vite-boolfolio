@@ -2,10 +2,12 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // Import all pages
 import AppHome from './pages/AppHome.vue';
+import NotFoundPage from './pages/NotFoundPage.vue';
 import AboutPage from './pages/AboutPage.vue';
 import ContactsPage from './pages/ContactsPage.vue';
 import PortfolioPage from './pages/PortfolioPage.vue';
 import ProjectPage from './pages/ProjectPage.vue';
+import TypePage from './pages/TypePage.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -14,6 +16,11 @@ const router = createRouter({
             path: '/',
             name: 'home',
             component: AppHome
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            name: '404',
+            component: NotFoundPage
         },
         {
             path: '/about',
@@ -34,6 +41,11 @@ const router = createRouter({
             path: '/portfolio/:slug',
             name: 'project',
             component: ProjectPage
+        },
+        {
+            path: '/portfolio/types/:slug',
+            name: 'type',
+            component: TypePage
         }
     ]
 });
